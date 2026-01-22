@@ -3,9 +3,11 @@ name: CI Pipeline
 on:
   push:
     branches: [main]
+
   jobs:
     build:
      runs-on: ubuntu-latest
+
      steps:
       -name: Checkout Code
       uses: actions/Checkout@v5
@@ -20,3 +22,6 @@ on:
 
       -name: Run Tests
       run: npm test  
+
+      -name: Run index.js
+      run: node index.js
