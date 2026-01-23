@@ -1,4 +1,3 @@
-﻿````md
 # GitHub Actions CI Pipeline – Beginner Friendly 🚀 (Node.js App Demo Project)
 
 This repository shows **how GitHub Actions works as a CI (Continuous Integration) tool** using a simple **Node.js** project.
@@ -225,4 +224,5 @@ Feel free to clone, fork, and experiment.
 
 ```
 ```
+
 
