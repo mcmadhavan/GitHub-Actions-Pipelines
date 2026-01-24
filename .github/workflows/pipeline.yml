@@ -8,22 +8,22 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest                    # Use the latest Ubuntu runner environment 
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v5
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Checkout Code                   # Checkout the repository code 
+        uses: actions/checkout@v5             # Use the latest version of the checkout action 
+ 
+      - name: Setup Node.js                   # Set up Node.js environment
+        uses: actions/setup-node@v3           # Use the latest version of the setup-node action
         with:
-          node-version: 25
+          node-version: 25                    # Specify the Node.js version to use
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Install Dependencies            # Install project dependencies
+        run: npm install                      # Install dependencies using npm
 
-      - name: Run Tests
-        run: npm test
+      - name: Run Tests                       # Run the test suite 
+        run: npm test                         # Execute tests using npm test script
 
-      - name: Run index.js
-        run: node index.js
+      - name: Run index.js                    # Execute the index.js file
+        run: node index.js                    # Run the index.js file using Node.js 
